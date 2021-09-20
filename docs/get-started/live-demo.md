@@ -36,9 +36,8 @@ For instance:
 
 ```bash
 curl \
---request POST 'https://live-demo-us.gotenberg.dev/forms/chromium/convert/url' \
---form 'url="https://sparksuite.github.io/simple-html-invoice-template/"' \
--o my.pdf
+-X POST -F 'url="https://sparksuite.github.io/simple-html-invoice-template/"' \
+https://live-demo-us.gotenberg.dev/forms/chromium/convert/url  -o my.pdf
 ```
 
 ## Limitations
